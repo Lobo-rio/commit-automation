@@ -1,0 +1,20 @@
+{
+  "name": "commit-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Lobo-rio/commit-automation.git",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
+  }
+}
