@@ -4,6 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/Lobo-rio/commit-automation.git",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
@@ -16,5 +17,8 @@
   },
   "lint-staged": {
     "*.js": "prettier --write"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
